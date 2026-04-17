@@ -64,7 +64,9 @@ def main():
     output_dir = root / "CROPPED_PHOTOS"
     output_dir.mkdir(exist_ok=True)
 
-    image_files = sorted(input_dir.glob("SCAN_*.jpg"))
+    image_files = sorted(
+        [f for f in input_dir.iterdir() if f.suffix.lower() in ['.jpg', '.jpeg', '.png', '.bmp', '.tiff', '.tif']]
+    )
 
     if not image_files:
         print("❌ Файлы не найдены")
