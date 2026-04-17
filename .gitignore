@@ -1,1 +1,5 @@
 Nothing should be ignored based on the provided file changes. The changes only include source/config files (.md, .py) without any build artifacts, dependencies, or temporary files that would warrant additions to .gitignore.
+
+HPSCANS/
+
+CROPPED_PHOTOS/
