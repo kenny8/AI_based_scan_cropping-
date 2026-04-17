@@ -1,0 +1,5 @@
+onnxruntime-gpu
+rembg
+pillow
+tqdm
+opencv-python
